@@ -1,0 +1,53 @@
+{
+  "name": "zaklauncher_api",
+  "version": "0.5.2",
+  "private": true,
+  "description": "ZakLauncher API",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dantezz-dev/zaklauncher_api.git"
+  },
+  "keywords": [
+    "websocket",
+    "ws",
+    "pubsub",
+    "asyncapi",
+    "rpc"
+  ],
+  "author": "Unzle Zak",
+  "license": "APACHE 2.0",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "test": "jest --verbose"
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.25.2",
+    "ajv": "^8.6.2",
+    "wsapix": "^0.5.2",
+    "notepack.io": "^3.0.1",
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.12.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/ws": "^8.5.3",
+    "jest": "^26.6.3",
+    "lerna": "^6.0.0",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^10.8.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.6.4"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  }
+}
